@@ -1,9 +1,9 @@
 import React from 'react';
-import "./body.css";
+import "./about.css";
 import profile from "./images/profile.jng";
 
 
-function body() {
+function about() {
     return (
         <div className="about">
 
@@ -49,4 +49,4 @@ function body() {
     )
 }
 
-export default body;
+export default about;
