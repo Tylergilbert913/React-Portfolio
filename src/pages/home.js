@@ -1,12 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 import "./body.css";
 import profile from "./images/profile.jng";
+import Container from "../components/Container";
+import Row from "../components/Row";
+import Col from "../components/Col";
 
-
-function about() {
+class Home extends Component {
+    render() {
     return (
-        <div className="about">
-
+        
+        <Container>
             <div className="container">
                 <div className="card">
                     <div className="card-header">
@@ -15,13 +18,13 @@ function about() {
          </h3>
             </div>
             <div className="card-body">
-                        <blockquote className="blockquote mb-0">
-          <div className="row">
+            <blockquote className="blockquote mb-0">
+          <Row>
          <div className="col-md-3">
-       <img id="pic" src={profile} alt="profile pic" width="100%" height="auto%" />
+       <img className="profile-pic" src={profile} alt="profile pic" width="100%" height="auto%" />
       </div>
 
-    <div className="col-md-8">
+    <Col size="col-md-8">
 
      <p>To truly understand me, one must realize that the outdoors is the one thing in this world that seems to keep
         me aligned. Wether it be hanging out in a hammock, skydiving, river rafting, kayaking, snowboarding,
@@ -38,15 +41,16 @@ function about() {
     <p>I'm in the process of acquiring my Full-Stack Web Developer certificate at Georgia Tech. As a Full-Stack Web
         Developer, I enjoy creating responsive, user-friendly websites. I truly love creating and web development has
         given me the opportunity to do just that.</p>
- </div>
-  </div>
+ </Col>
+  </Row>
    </blockquote>
    </div>
  </div>
-            </div>
+          </div> 
 
-        </div>
-    )
+        </Container>
+    );
+    }
 }
 
-export default about;
+export default Home;
