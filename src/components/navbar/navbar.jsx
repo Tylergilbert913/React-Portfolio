@@ -3,7 +3,7 @@ import "./navbar.css";
 import { Link } from "react-router-dom";
 import logo from "./logo.png";
 
-function Header() {
+function Navbar() {
     return (
         <div className="navApp">
             <nav className="navbar">
@@ -29,7 +29,7 @@ function Header() {
         </div>
     )
 }
-export default Header;
+export default Navbar;
 
 
 

@@ -1,21 +1,20 @@
+/* eslint-disable react/style-prop-object */
 import React from 'react';
 import { Row, Col } from "../components";
 
 
-function container() {
+function Contact() {
     return (
         <div className="container">
-        
         <section className="row">
             <h1>Contact</h1>
-            <hr>
         </section>
         
         <section className="row gene">
             <section className="col-md-5">
                 <h3>Name</h3>
                 <section className="form-floating mb-3">
-                    <input type="name" className="form-control" id="floatingInput" placeholder="Name">
+                    <input type="name" className="form-control" id="floatingInput" placeholder="Name"></input>
                     <label for="floatingInput">Name</label>
                 </section>
             </section>
@@ -25,7 +24,7 @@ function container() {
             <section className="col-md-5">
                 <h3>Email</h3>
                 <section className="form-floating mb-3">
-                    <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com">
+                    <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com"></input>
                     <label for="floatingInput">Email address</label>
                 </section>
             </section>
@@ -47,7 +46,8 @@ function container() {
                 <button type="button" className="btn btn-primary btn-lg">Submit</button>
             </article>
         </section>
-        </section>
     </div>
     )
-}
+};
+
+export default Contact;
