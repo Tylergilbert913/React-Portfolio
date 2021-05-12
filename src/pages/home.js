@@ -10,7 +10,6 @@ class Home extends Component {
     return (
         
         <Container>
-            <div className="container">
                 <div className="card">
                     <div className="card-header">
                         <h3>
@@ -20,9 +19,9 @@ class Home extends Component {
             <div className="card-body">
             <blockquote className="blockquote mb-0">
           <Row>
-         <div className="col-md-3">
+         <Col size="col-md-3">
        <img className="profile-pic" src={profile} alt="profile pic" width="100%" height="auto%" />
-      </div>
+      </Col>
 
     <Col size="col-md-8">
 
@@ -46,7 +45,7 @@ class Home extends Component {
    </blockquote>
    </div>
  </div>
-          </div> 
+           
 
         </Container>
     );
