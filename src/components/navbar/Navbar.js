@@ -7,23 +7,19 @@ function Navbar() {
     return (
         <div className="navApp">
             <nav className="navbar">
-                <div className="col-md-1"></div>
-                <div className="col-md-3">
-                    <span id="name" className="navbar-brand mb-0 h1 tyler">Tyler Gilbert</span>
+                
+                <div className="col-md-2 tyler">
+                    <span className="navbar-brand mb-0 h1 tyler">Tyler Gilbert</span>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-6">
 
                 </div>
                 <div className="col-md-1">
-                    <Link to="/Home">About Me</Link>
+                    <Link to="/Home">About</Link>
                 </div>
                 <div className="col-md-1">
                     <Link to="/Portfolio">Portfolio</Link>
                 </div>
-                <div className="col-md-1">
-                    <Link to="/Contact">Contact</Link>
-                </div>
-                <div className="col-md-1"></div>
             </nav>
 
         </div>

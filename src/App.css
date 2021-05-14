@@ -1,5 +1,29 @@
-.about, 
-.project-link {
+.about,
+.moon {
+  font-size: 40px;
+  text-align: center;
+  color: bisque;
+  font-weight: bold;
+}
+
+.header {
+  padding: 30px;
+}
+
+ .port {
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+.stern {
+  display: flex;
+  justify-content: space-between;
+}
+ .profile-pic {
+   text-align: center;
+ }
+
+.projectlink {
   text-align: center;
 }
 

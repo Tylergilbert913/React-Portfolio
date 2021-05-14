@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "../App.css";
 import profile from "../images/profile.jpg";
+import wilderness from "../images/wilderskills.jpg";
 import Container from "../components/Container/Container";
 import Row from "../components/Row/Row";
 import Col from "../components/Col/Col";
@@ -10,20 +11,19 @@ class Home extends Component {
     return (
         
         <Container>
-                <div className="card">
-                    <div className="card-header about">
-                        <h3>
+            <div className="header">
+                        <h3 className="moon">
                             About Me
          </h3>
-            </div>
+         </div>
             <div className="card-body">
-            <blockquote className="blockquote mb-0">
           <Row>
          <Col size="col-md-3">
-       <img className="profile-pic" src={profile} alt="profile pic" width="40%" height="100%" />
+       <img className="profile-pic card-fluid" src={profile} alt="profile pic" width="100%" height="95%" />
       </Col>
-
-    <Col size="col-md-8">
+  
+    <Col className="moon" size="col-md-6">
+        
 
      <p>To truly understand me, one must realize that the outdoors is the one thing in this world that seems to keep
         me aligned. Wether it be hanging out in a hammock, skydiving, river rafting, kayaking, snowboarding,
@@ -42,9 +42,43 @@ class Home extends Component {
         given me the opportunity to do just that.</p>
  </Col>
   </Row>
-   </blockquote>
-   </div>
+   
+
  </div>
+<Row>
+    <img
+      src={wilderness}
+      className="card-img-top pic" alt="Somewhere in the Redwoods" width="80%%" height="75%"></img>
+    <div className="card-body">
+      <h1 className="card-title moon">Contact Information</h1>
+      <h5 className="card-text moon">Below are several ways of contacting me or keeping up with what I'm currently working on:
+      </h5>
+    
+      <div className="card-text moon"><small className="text-muted">
+          <Col size= "col-md-2">
+          <a href="https://www.instagram.com/gilbert_graped/"><i class="yup fab fa-instagram-square"></i></a>
+          </Col>
+          <Col size= "col-md-2">
+          <a href="https://www.linkedin.com/in/tyler-gilbert-6b269a171/"><i class="yup fab fa-linkedin-in"></i></a>
+          </Col>
+          <Col size= "col-md-2">
+          <a href="https://github.com/Tylergilbert913"><i class="yup fab fa-github-square"></i></a>
+          </Col>
+          <Col size= "col-md-2">
+          <a href="mailto:Tyler.gilbert913@gmail.com"><i class="yup fas fa-envelope-square"></i></a>
+          </Col>
+          <Col size= "col-md-2">
+          <a href="https://www.facebook.com/tyler.gilbert.3762"><i class="yup fab fa-facebook-square"></i></a>
+          </Col>
+          <Col size= "col-md-2">
+          <a href="./Tyler Gilbert .pdf" class="yup" download>My Resume</a>
+          </Col>
+        </small>
+        <p>Call Me: 1(706)577-5779</p>
+    </div>
+  </div>
+  </Row>
+
            
 
         </Container>

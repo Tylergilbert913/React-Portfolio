@@ -17,7 +17,7 @@ class Portfolio extends Component {
         <Container>
     
     <Row>
-      <div className="about">
+      <div className="about header">
       <h1>Projects</h1>
       
       <h5>Click the images below for my latest work:</h5>
@@ -27,20 +27,23 @@ class Portfolio extends Component {
     
     <Row>
       <Col size="col-md-6">
-        
+        <div class="about header">
         <h3>Repository Refactor</h3>
-        <img src={RepoMan} class="img-fluid" alt="The Repo Man"></img>
-        <a className="project-link" href="https://tylergilbert913.github.io/The-Repo-Man/">
+        <img src={RepoMan} class="img-fluid header" alt="The Repo Man"></img>
+        <a className="projectlink" href="https://tylergilbert913.github.io/The-Repo-Man/">
           RepoMan
         </a>
+        </div>
       </Col>
       
       <Col size="col-md-6">
+        <div className="about header">
         <h3>Feed Me Project</h3>
-        <img src={FeedMe} class="img-fluid" alt="Feed Me"></img>
-        <a className="project-link" href="https://a-andres1.github.io/feed-me-tm/">
+        <img src={FeedMe} class="img-fluid header" alt="Feed Me"></img>
+        <a className="projectlink" href="https://a-andres1.github.io/feed-me-tm/">
           FeedMe
         </a>
+        </div>
       </Col>
     </Row>
     
@@ -48,19 +51,23 @@ class Portfolio extends Component {
     <Row>
       
       <Col size="col-md-6">
+        <div class="about header">
         <h3>Password Generator</h3>
-        <img src={Generator} className="img-fluid" alt="Password Generator"></img>
-        <a className="project-link" href="https://tylergilbert913.github.io/A-Generation-of-Passwords/">
+        <img src={Generator} className="img-fluid header" alt="Password Generator"></img>
+        <a className="projectlink" href="https://tylergilbert913.github.io/A-Generation-of-Passwords/">
           Password Generator
         </a>
+        </div>
       </Col>
       
-      <Col size="col-md-6">
+      <Col size="col-md-6 header">
+        <div className="about">
         <h3>HomeGrown</h3>
-        <img src={HomeGrown} class="img-fluid" alt="HomeGrown"></img>
-        <a className="project-link" href="https://homegrown-app-grizzlies.herokuapp.com/">
+        <img src={HomeGrown} class="img-fluid header" alt="HomeGrown"></img>
+        <a className="projectlink" href="https://homegrown-app-grizzlies.herokuapp.com/">
             HomeGrown
         </a>
+        </div>
       </Col>
       </Row>
   </Container>
