@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import "./body.css";
-import profile from "./images/profile.jng";
-import Container from "../components/Container";
-import Row from "../components/Row";
-import Col from "../components/Col";
+import "../App.css";
+import profile from "../images/profile.jpg";
+import Container from "../components/Container/Container";
+import Row from "../components/Row/Row";
+import Col from "../components/Col/Col";
 
 class Home extends Component {
     render() {
@@ -11,7 +11,7 @@ class Home extends Component {
         
         <Container>
                 <div className="card">
-                    <div className="card-header">
+                    <div className="card-header about">
                         <h3>
                             About Me
          </h3>
@@ -20,7 +20,7 @@ class Home extends Component {
             <blockquote className="blockquote mb-0">
           <Row>
          <Col size="col-md-3">
-       <img className="profile-pic" src={profile} alt="profile pic" width="100%" height="auto%" />
+       <img className="profile-pic" src={profile} alt="profile pic" width="40%" height="100%" />
       </Col>
 
     <Col size="col-md-8">

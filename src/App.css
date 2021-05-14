@@ -1,3 +1,23 @@
+.about, 
+.project-link {
+  text-align: center;
+}
+
+.tyler {
+  color:bisque;
+  font-size: 40px;
+  font-weight: bold;
+
+}
+
+body {
+  background: url("https://www.wallpapertip.com/wmimgs/11-112816_background-images-hd9-src-cool-neutral-background-best.jpg") no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
 .App {
   text-align: center;
 }

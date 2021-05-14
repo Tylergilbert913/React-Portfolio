@@ -1,0 +1,19 @@
+nav.navbar.navbar-default {
+    margin-bottom: 0;
+  }
+
+.navbar {
+    background-image: url("https://www.octaneseating.com/blog/wp-content/uploads/2018/05/Wood-header.jpg");
+    padding: 20px;
+    background-size: cover;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.nav-link {
+  float: right;
+}
+/* font-size for navbar  */
+.navbar-brand {
+  font-size: 30px;
+}

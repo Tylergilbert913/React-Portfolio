@@ -1,8 +1,9 @@
 /* eslint-disable react/style-prop-object */
 import React, { Component } from 'react';
-import Row from "../components/Row";
-import Col from "../components/Col";
-import Container from "../components/Container";
+import "../App.css";
+import Row from "../components/Row/Row";
+import Col from "../components/Col/Col";
+import Container from "../components/Container/Container";
 
 
 class Contact extends Component {
