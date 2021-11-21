@@ -8,7 +8,7 @@
   position: fixed;
   top: 0;
   z-index: 2;
-
+  transition: all 2s ease;
   .wrapper {
     padding: 10px 30px;
     display: flex;
@@ -40,6 +40,48 @@
         span {
           font-size: 20px;
           font-weight: 500;
+        }
+      }
+    }
+
+    .right {
+      .hamburger {
+        width: 32px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+        overflow: hidden;
+
+        span {
+          width: 100px;
+          height: 3px;
+          background-color: $mainColor;
+          transform-origin: left;
+          transition: all 2s ease;
+        }
+      }
+    }
+  }
+  //   if active this new color scheme will be activated
+  &.active {
+    background-color: $mainColor;
+    color: white;
+
+    .hamburger {
+      span {
+        //   this means first line of span or first child of hamburger which is span
+        &:first-child {
+          background-color: white;
+          transform: rotate(45deg);
+        }
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        &:last-child {
+          background-color: white;
+          transform: rotate(-45deg);
         }
       }
     }
