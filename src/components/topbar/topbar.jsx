@@ -1,23 +1,30 @@
 import "./topbar.scss";
+import { Person, Mail } from "@material-ui/icons";
 
 function Topbar() {
   return (
     <div className="topbar" id="topbar">
       <div className="wrapper">
         <div className="left">
-          <a href="#intro">Home</a>
+          <a href="#intro" className="logo">
+            home
+          </a>
+          <div className="itemContainer">
+            <Person className="icon" />
+            <span>Tyler Gilbert</span>
+          </div>
+          <div className="itemContainer">
+            <Mail className="icon" />
+            <span>Tyler.Gilbert913@gmail.com</span>
+          </div>
         </div>
-        <div className="left">
-          <a href="#portfolio">Portfolio</a>
-        </div>
-        <div className="left">
-          <a href="#works">Work</a>
-        </div>
+
         <div className="right">
-          <a href="#testimonials">Testimonials</a>
-        </div>
-        <div className="right">
-          <a href="#contact">Contact</a>
+            <div className="hamburger">
+                <span className="line1"></span>
+                <span className="line2"></span>
+                <span className="line3"></span>
+            </div>
         </div>
       </div>
     </div>
