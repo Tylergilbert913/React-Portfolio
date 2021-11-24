@@ -4,19 +4,19 @@ function Menu({ menuOpen, setMenuOpen }) {
   return (
     <div className={"menu " + (menuOpen && "active")} >
       <ul>
-      <li>
+      <li onClick={() => setMenuOpen(false)}>
           <a href="#intro">Home</a>
-        </li>
-        <li>
+        </li >
+        <li onClick={() => setMenuOpen(false)}>
           <a href="#portfolio">Portfolio</a>
+        </li >
+        <li onClick={() => setMenuOpen(false)}>
+          <a href="#works">Work</a>
         </li>
-        <li>
-          <a href="#works">My Work</a>
+        <li onClick={() => setMenuOpen(false)}>
+          <a href="#testimonials">Testimonials</a>
         </li>
-        <li>
-          <a href="#testimonials">My Testimonials</a>
-        </li>
-        <li>
+        <li onClick={() => setMenuOpen(false)}>
           <a href="#contact">Contact</a>
         </li>
       </ul>

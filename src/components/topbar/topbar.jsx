@@ -1,5 +1,6 @@
 import "./topbar.scss";
 import { Person, Mail } from "@material-ui/icons";
+import Logo from "../../images/newlogo.png";
 
 function Topbar({ menuOpen, setMenuOpen }) {
     console.log(menuOpen);
@@ -9,7 +10,7 @@ function Topbar({ menuOpen, setMenuOpen }) {
       <div className="wrapper">
         <div className="left">
           <a href="#intro" className="logo">
-            home
+            <img src={Logo} alt="logo" />
           </a>
           <div className="itemContainer">
             <Person className="icon" />

@@ -1,3 +1,41 @@
 .intro {
-    background-color: orange;
+  background-color: rgb(129, 160, 129);
+  // this makes sure the items within the container are horizontal
+  display: flex;
+
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+
+    .imgContainer {
+      width: 700px;
+      height: 700px;
+      border-radius: 70%;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      float: left;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .right {
+    flex: 0.5;
+    overflow: hidden;
+
+    .wrapper {
+      width: 700px;
+      height: 700px;
+      border-radius: 70%;
+      display: flex;
+      align-items: center;
+
+      p {
+        font-size: 26px;
+      }
+    }
+  }
 }
