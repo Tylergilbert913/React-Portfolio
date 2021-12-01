@@ -7,8 +7,8 @@
     background-color: tan;
     position: relative;
     top: 70px;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
+    scroll-behavior: auto;
+    // scroll-snap-type: y mandatory;
     scrollbar-width: none;  //this is for firefox only
     &::-webkit-scrollbar{
         display: none; // and this is for chrome, IE, Mozilla, Safari and all other browser platforms

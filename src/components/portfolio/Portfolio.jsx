@@ -1,23 +1,71 @@
 import "./portfolio.scss";
+import HomeGrown from "../../images/HomeGrown.png";
+import PortfolioList from "../portfolioList/PortfolioList";
+import { useEffect, useState } from "react";
+import { featuredPortfolio, webApplication, photography } from "../../data.js";
 
 function Portfolio() {
-  return <div className="portfolio" id="portfolio">
-  </div>;
+  const [selected, setSelected] = useState("featured");
+  const [data, setData] = useState([]);
+
+  const list = [
+    {
+      id: "featured",
+      title: "Featured",
+    },
+    {
+      id: "web",
+      title: "Web Applications",
+    },
+    {
+      id: "photography",
+      title: "Photography",
+    },
+  ];
+
+  useEffect(() => {
+    switch (selected) {
+      case "featured":
+        setData(featuredPortfolio);
+        break;
+
+      case "web":
+        setData(webApplication);
+        break;
+
+      case "photography":
+        setData(photography);
+        break;
+
+      default:
+        setData(featuredPortfolio);
+    }
+  }, [selected]);
+
+  return (
+    <div className="portfolio" id="portfolio">
+      <h1>Portfolio</h1>
+      <ul>
+        {list.map((item) => (
+          <PortfolioList
+            title={item.title}
+            active={selected === item.id}
+            setSelected={setSelected}
+            id={item.id}
+          />
+        ))}
+        ;
+      </ul>
+      <div className="container">
+        {data.map((d) => (
+          <div className="item">
+            <img src={d.img} alt="" />
+            <h3>{d.title}</h3>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default Portfolio;
-
-
-// I'm a Front-End Web Developer with a passion for creating
-//             responsive, user-friendly websites. I recently completed Georgia
-//             Tech's Full-Stack Web Developer Coding Bootcamp and look forward to
-//             implementing the knowledge I've gained. I'm an adaptable,
-//             enthusiastic problem solver that enjoys team-building and
-//             collaboration. I've been apart of the sales and hospitality world
-//             for the last decade and have decided to push forward with my passion
-//             for creating.
-//             <br />
-//             <br />
-//             I'm also a huge outdoorsman, photographer, environmentalist and
-//             humanitarian. If I'm not nestled in front of my computer, then you
-//             can be certain that I'm somewhere in the mountains.
