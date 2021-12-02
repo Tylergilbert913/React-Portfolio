@@ -61,6 +61,7 @@ function Portfolio() {
           <div className="item">
             <img src={d.img} alt="" />
             <h3>{d.title}</h3>
+            <h2>{d.link}</h2>
           </div>
         ))}
       </div>
