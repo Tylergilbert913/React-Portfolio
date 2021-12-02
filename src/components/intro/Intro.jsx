@@ -46,7 +46,7 @@ function Intro() {
             <br />
             <br />
             I've been in the sales and hospitality world for the last decade,
-            but I'm eager to push foward with my newfound love for building web
+            but I'm eager to push forward with my newfound love for building web
             applications.
           </h4>
         </div>

@@ -2,9 +2,12 @@
 
 
 .intro {
-  background-color: rgb(231,153,114);
+  // background-color: rgb(245, 214, 198);
   // this makes sure the items within the container are horizontal
+  background-image: url("https://images.unsplash.com/photo-1502790671504-542ad42d5189?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwxNTE5NjQ4fHxlbnwwfHx8fA%3D%3D&w=1000&q=80");
+  background-size: cover;
   display: flex;
+  color: rgb(240, 235, 235);
 
   .left {
     flex: 0.5;
@@ -56,7 +59,7 @@
 
         span{
           font-size: inherit;
-          color: $mainColor;
+          color: rgb(199, 170, 132);
           font-weight: 510;
         }
         .ityped-cursor{

@@ -9,9 +9,9 @@ function Topbar({ menuOpen, setMenuOpen }) {
     <div className={"topbar " + (menuOpen && "active")}>
       <div className="wrapper">
         <div className="left">
-          <a href="#intro" className="logo">
+          {/* <a href="#intro" className="logo">
             <img src={Logo} alt="logo" />
-          </a>
+          </a> */}
           <div className="itemContainer">
             <Person className="icon" />
             <span>Tyler Gilbert</span>

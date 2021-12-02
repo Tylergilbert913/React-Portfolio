@@ -54,7 +54,7 @@ function Portfolio() {
             id={item.id}
           />
         ))}
-        ;
+        
       </ul>
       <div className="container">
         {data.map((d) => (
