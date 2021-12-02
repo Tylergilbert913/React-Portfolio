@@ -9,7 +9,6 @@ This is my professional portfolio which displays my current work, contact inform
 
 ## Deployed site
 
-https://tylergilbert913.github.io/React-Portfolio/
 
     
 ## Table of Contents
