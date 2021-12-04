@@ -1,6 +1,10 @@
 import "./works.scss";
 import HomeGrown from "../../images/HomeGrown.png";
-import { ArrowBackIos, ArrowForwardIos } from "@material-ui/icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
+
+
 
 function Works() {
   return (
@@ -24,8 +28,8 @@ function Works() {
           </div>
         </div>
       </div>
-      <img src={ArrowBackIos} className="arrow-left" alt="" />
-      <img src={ArrowForwardIos} className="arrow right" alt="" />
+      <FontAwesomeIcon icon={faChevronLeft} className="arrow left" />
+      <FontAwesomeIcon icon={faChevronRight} className="arrow right" />
     </div>
   );
 }
