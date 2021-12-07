@@ -8,7 +8,16 @@ import { faLeaf } from "@fortawesome/free-solid-svg-icons";
 import FeedMe from "../../images/FeedMe.png";
 import HomeGrown from "../../images/HomeGrown.png";
 import ElectricAve from "../../images/ElectricAve.png";
+import { useState } from "react";
+
+
 function Works() {
+
+  // eslint-disable-next-line no-undef
+  const [ currentSlide, setCurrentSlide ] = useState(0);
+
+  
+  
   const data = [
     {
       id: "1",
@@ -35,9 +44,14 @@ function Works() {
       link: "https://github.com/skimmers/project_3",
     },
   ];
+  const handleClick = (way) => {
+    way === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide-1 : 2)
+     : setCurrentSlide(currentSlide < data.length -1 ? currentSlide + 1 : 0)
+
+  }
   return (
     <div className="works" id="works">
-      <div className="slider">
+      <div className="slider" style={{ transform: `translateX(-${currentSlide*100}vw)` }}>
         {data.map((d) => (
           <div className="container">
             <div className="item">
@@ -58,8 +72,8 @@ function Works() {
           </div>
         ))}
       </div>
-      <FontAwesomeIcon icon={faChevronLeft} className="arrow left" />
-      <FontAwesomeIcon icon={faChevronRight} className="arrow right" />
+      <FontAwesomeIcon icon={faChevronLeft} className="arrow left" onClick={()=> handleClick("left")} />
+      <FontAwesomeIcon icon={faChevronRight} className="arrow right" onClick={()=> handleClick()}/>
     </div>
   );
 }
